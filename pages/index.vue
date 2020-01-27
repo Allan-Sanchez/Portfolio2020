@@ -37,7 +37,7 @@
 
 <script>
 import NavBar from '~/components/Navbar.vue';
-import Banner from '~/components/banner.vue'
+import Banner from '~/components/Banner.vue'
 
 export default {
   components: {
