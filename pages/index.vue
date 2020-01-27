@@ -1,5 +1,5 @@
 <template>
-  <div class="container-father" :class="(mode === 'light') ? 'light' : 'dark'">
+  <div class="container-father">
     <style>
       :root{
         --backgroundColor:{{ backgroundColor }};
@@ -23,7 +23,6 @@
         <!-- Banner Hero -->
         <Banner></Banner>
 
-        <h3 class="ejemplo">test</h3>
 
         <!-- about me -->
 
