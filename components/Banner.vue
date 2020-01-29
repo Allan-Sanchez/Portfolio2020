@@ -11,8 +11,8 @@
 
               <div class="site-button ml-md-5 ml-lg-0">
                 <div class="d-flex flex-row flex-wrap">
-                  <button class="btn button primary-button  mr-md-1 mr-lg-4 text-uppercase">Hire me</button>
-                  <button class="btn button secundary-button mr-md-1  mr-lg-4 text-uppercase">Get cv</button>
+                  <button class="btn button primary-button  mr-md-0 mr-lg-4 text-uppercase">Hire me</button>
+                  <button class="btn button secundary-button mt-2 mt-md-0  mr-md-0  mr-lg-4 text-uppercase">My Blog</button>
                 </div>
               </div>
 
@@ -21,7 +21,7 @@
               </div> -->
 
             </div>
-            <div class="col-lg-6 col-md-12 pl-5 banner-image">
+            <div class="col-lg-6 col-md-12 pl-md-0 pl-lg-5 -mt-1 banner-image">
               <div>
                 <svg width="100%"  viewBox="0 0 863 826.714">
                   <title>undraw_laravel_and_vue_59tp</title>

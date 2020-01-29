@@ -23,8 +23,13 @@
         <!-- Banner Hero -->
         <Banner></Banner>
 
-
         <!-- about me -->
+        <Abouts></Abouts>
+
+        <!-- timeline -->
+        <Skill></Skill>
+
+
 
 
      
@@ -37,12 +42,16 @@
 
 <script>
 import NavBar from '~/components/Navbar.vue';
-import Banner from '~/components/Banner.vue'
+import Banner from '~/components/Banner.vue';
+import Abouts from '~/components/Abouts.vue';
+import Skill from '~/components/Skill.vue';
 
 export default {
   components: {
     NavBar,
-    Banner
+    Banner,
+    Abouts,
+    Skill
   },
   data() {
     return {
@@ -93,8 +102,11 @@ export default {
     background: var(--backgroundColor);
   }
   .site-main{
-    padding: 0 13%;
+    /* padding: 0 5%; */
   }
-  
+  p.para{
+  color: var(--text-color);
+  font: normal 500 16px/25px var(--roboto);    
+  }
 
 </style>
