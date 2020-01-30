@@ -21,9 +21,9 @@
               </div> -->
 
             </div>
-            <div class="col-lg-6 col-md-12 pl-md-0 pl-lg-5 -mt-1 banner-image">
+            <div class="col-lg-6 col-md-12 pl-md-0 pl-lg-5  banner-image">
               <div>
-                <svg width="100%"  viewBox="0 0 863 826.714">
+                <svg width="80%"  viewBox="0 0 863 826.714">
                   <title>undraw_laravel_and_vue_59tp</title>
                     <g>
                       <path d="M908.585 346.03C863.668 169.408 708.468 41.912 526.296 36.799 429.988 34.095 328.644 66.036 254.86 177.81c-131.9 199.809 8.105 337.883 105.713 403.493a610.758 610.758 0 0 1 126.241 113.465c65.931 78.237 192.767 175.459 343.824 23.128 109.485-110.41 107.866-254.219 77.948-371.866z" transform="translate(-168.5 -36.643)" fill="#f2f2f2"></path>
@@ -46,7 +46,14 @@
               <!-- <img src="" alt=""> -->
 
             </div>
+            <div class="box">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            
           </div>
+          
         </div>
 
       </section>
@@ -196,5 +203,44 @@
   }
   .button.primary-button:hover{
     color:whitesmoke;
+  }
+
+  /* scroll indicator */
+  .box{
+    position: absolute;
+    top: 95%;
+    left: 47%;
+    transform: translate(-50% ,-50%);
+  }
+  .box span{
+    display: block;
+    width: 30px;
+    height: 30px;
+    border-bottom: 3px solid var(--text-color);
+    border-right: 3px solid var(--text-color);
+    transform: rotate(45deg);
+    margin: -5px;
+    animation: animate 2s infinite;
+  }
+  .box span:nth-child(1){
+    animation-delay: -0.2s;
+  }
+  .box span:nth-child(2){
+    animation-delay: -0.4s;
+  }
+  @keyframes animate{
+    0%{
+      opacity: 0;
+      transform: rotate(45deg) translate(-20px,-20px);
+
+    }
+    50%{
+      opacity: 1;
+    }
+    100%{
+      opacity: 0;
+      transform: rotate(45deg) translate(-20px,-20px);
+
+    }
   }
 </style>
