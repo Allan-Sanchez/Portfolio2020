@@ -208,7 +208,7 @@
   /* scroll indicator */
   .box{
     position: absolute;
-    top: 95%;
+    top: 90%;
     left: 47%;
     transform: translate(-50% ,-50%);
   }
@@ -239,8 +239,13 @@
     }
     100%{
       opacity: 0;
-      transform: rotate(45deg) translate(-20px,-20px);
+      transform: rotate(45deg) translate(20px,20px);
 
     }
   }
+   @media only screen and (max-width: 1350px) {
+     .box{
+       display: none;
+     }
+   }
 </style>

@@ -29,6 +29,9 @@
         <!-- timeline -->
         <Skill></Skill>
 
+        <!-- contact -->
+        <Contact></Contact>
+
 
 
 
@@ -45,13 +48,15 @@ import NavBar from '~/components/Navbar.vue';
 import Banner from '~/components/Banner.vue';
 import Abouts from '~/components/Abouts.vue';
 import Skill from '~/components/Skill.vue';
+import Contact from '~/components/Contact.vue';
 
 export default {
   components: {
     NavBar,
     Banner,
     Abouts,
-    Skill
+    Skill,
+    Contact
   },
   data() {
     return {
