@@ -19,8 +19,9 @@
 
                     <b-navbar-nav class="ml-auto">
                         <b-nav-item-dropdown class="nav-item-portfolio efect-nav" :text="$t('Navbar.language')" right>
-                          <b-dropdown-item class="nav-item-portfolio" href="#">EN</b-dropdown-item>
-                          <b-dropdown-item class="nav-item-portfolio" href="#">ES</b-dropdown-item>
+                         <!-- <nuxt-link: to = "switchLocalePath ('en')" class="nav-item-portfolio" > italiano </nuxt-link>  -->
+                          <b-dropdown-item class="nav-item-portfolio" :to="switchLocalePath ('en')">EN</b-dropdown-item>
+                          <b-dropdown-item class="nav-item-portfolio" :to="switchLocalePath ('es')">ES</b-dropdown-item>
                         </b-nav-item-dropdown>
 
                         <!-- <b-nav-item href="#" class="nav-item-portfolio" @click="toggleMode()" >

@@ -5,7 +5,7 @@
             <div class="row">
                 <div class="col-lg-6 col-md-12">
                     <div class="skill-title mr-md-5 mt-md-5">
-                        <h2 class=" text-uppercase">Ultimos Proyectos</h2>
+                        <h2 class=" text-uppercase">{{ $t('Skill.title') }}</h2>
 
                         <ul class="top-work">
                              <li class="d-flex mb-4 mb-md-2">
@@ -61,7 +61,7 @@
 
                 <div class="col-lg-6 col-md-12 about-title">
                     <h2 class="skill-image text-uppercase pt-5">
-                        <span>Skill</span>
+                        <span>{{ $t('Skill.title1') }}</span>
                     </h2>
                     <div class="row ml-md-5">
                         <div class="col-md-12 col-sm-6 d-flex">
@@ -136,7 +136,7 @@
 
                     <div class="paragraph  py-4">
                         <p class="para">
-                           Para tener mas informacion acerca de mis habilidades visita mi <a href="#">GITHUB</a>
+                           {{ $t('Skill.paragraph') }} <a href="#">GITHUB</a>
                         </p>
                     </div>
                     <!-- <button type="button" class="btn button primary-button text-uppercase">Download cv</button> -->

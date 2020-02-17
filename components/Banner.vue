@@ -4,15 +4,15 @@
           <div class="row">
             <div class="col-lg-6 col-md-12 site-title">
               <div class="ml-md-5 ml-lg-0">
-                <h3 class="title-text">Hey</h3>
-                <h1 class="title-text text-uppercase">I am Allan</h1>
+                <h3 class="title-text">{{ $t('Banner.greeting') }}</h3>
+                <h1 class="title-text text-uppercase">{{ $t('Banner.title') }}</h1>
                 <h4 class="title-text text-uppercase">Full-stack web developer</h4>
               </div>
 
               <div class="site-button ml-md-5 ml-lg-0">
                 <div class="d-flex flex-row flex-wrap">
-                  <button class="btn button primary-button  mr-md-0 mr-lg-4 text-uppercase">Hire me</button>
-                  <button class="btn button secundary-button mt-2 mt-md-0  mr-md-0  mr-lg-4 text-uppercase">My Blog</button>
+                  <button class="btn button primary-button  mr-md-0 mr-lg-4 text-uppercase">{{ $t('Banner.btn1') }}</button>
+                  <button class="btn button secundary-button  mt-md-0  mr-md-0  mr-lg-4 text-uppercase">{{ $t('Banner.btn2') }}</button>
                 </div>
               </div>
 

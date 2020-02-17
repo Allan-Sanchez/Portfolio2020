@@ -26,21 +26,21 @@
 
                 <div class="col-lg-6 col-md-12 about-title">
                     <h2 class="text-uppercase pt-5">
-                        <span>Let me</span>
-                        <span>introduce</span>
-                        <span>myself</span>
+                        <span>{{ $t('About.title') }}</span>
+                        <span>{{ $t('About.title1') }}</span>
+                        <span>{{ $t('About.title2') }}</span>
                     </h2>
                     
                     <div class="paragraph py-4">
                         <p class="para">
-                            Mi nombre es <strong>Allan Edrey Sanchez Rixtun</strong> actualmente curso el ultimo Grado de <strong>Ingenieria en Sistemas Computacionales</strong> en la Universidad Mariano Galvez Guatemala
+                           {{$t('About.paragraph1')}} <strong>Allan Edrey Sanchez Rixtun</strong> {{$t('About.paragraph2')}} <strong> {{ $t('About.paragraph3') }}</strong> {{ $t('About.paragraph4') }}
                         </p>
 
                         <p class="para">
-                            Soy un joven autodidacta del Departamento de Jalapa,Guatemala tengo conocimientos solidos en diversas tecnologias tales como <b>VUE.JS LARAVEL JAVASCRIPT PHP NUXT</b> Para saber mas de mi ve a mi <strong>GITHUB</strong>
+                            {{ $t('About.paragraph5') }} <b>VUE.JS LARAVEL JAVASCRIPT PHP NUXT</b> {{ $t('About.paragraph6') }} <strong>GITHUB</strong>
                         </p>
                     </div>
-                    <button type="button" class="btn button primary-button text-uppercase">Download cv</button>
+                    <button type="button" class="btn button primary-button text-uppercase">{{ $t('About.btn') }}</button>
                 </div>
             </div>
         </div>
