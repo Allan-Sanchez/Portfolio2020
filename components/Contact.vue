@@ -1,5 +1,5 @@
 <template>
-    <section class="formulario">
+    <section id="section-contact" class="formulario">
         <div class="container contact">
             <div class="row">
                 <h3 class="title-contact text-uppercase py-4">{{ $t('Contact.title') }}</h3>

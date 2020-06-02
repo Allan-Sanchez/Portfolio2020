@@ -1,8 +1,8 @@
 <template>
-    <div>
+    <div style=" z-index:1" >
         <header class="header_area">
             <div class="main-menu">
-                <b-navbar class="navbar navbar-light" toggleable="lg">
+                <b-navbar class="navbar navbar-light fixed-top color-nav"  toggleable="lg">
                     <b-navbar-brand class="nav-item-logo-port" href="#">
                             Allan Sanchez
                     </b-navbar-brand>
@@ -11,10 +11,10 @@
                   <b-collapse id="nav-collapse" is-nav>
                   <div class="mr-auto"></div>
                     <b-navbar-nav id="patherNav" class="pather-nav">
-                      <b-nav-item class="nav-item-portfolio efect-nav nav-actived" href="#">{{ $t('Navbar.home') }}</b-nav-item>
-                      <b-nav-item class="nav-item-portfolio efect-nav" href="#">{{ $t('Navbar.about') }}</b-nav-item>
-                      <b-nav-item class="nav-item-portfolio efect-nav" href="#">{{ $t('Navbar.skil') }}</b-nav-item>
-                      <b-nav-item class="nav-item-portfolio efect-nav" href="#">{{ $t('Navbar.contact') }}</b-nav-item>
+                      <b-nav-item class="nav-item-portfolio efect-nav nav-actived" to="/">{{ $t('Navbar.home') }}</b-nav-item>
+                      <b-nav-item class="nav-item-portfolio efect-nav" href="#section-about">{{ $t('Navbar.about') }}</b-nav-item>
+                      <b-nav-item class="nav-item-portfolio efect-nav" href="#section-skill">{{ $t('Navbar.skil') }}</b-nav-item>
+                      <b-nav-item class="nav-item-portfolio efect-nav" href="#section-contact">{{ $t('Navbar.contact') }}</b-nav-item>
                     </b-navbar-nav>
 
                     <b-navbar-nav class="ml-auto">
@@ -53,8 +53,12 @@
                   </b-collapse>
 
                 </b-navbar>
+
             </div>
         </header>
+                <div class="bar-nav">
+                    <div class="progress-bar-nav" id="myBar"></div>
+                </div>
         
     </div>
 </template>
@@ -80,12 +84,53 @@ export default {
                 this.themeActive = 'active';
                 this.$emit('Changemode');
             }
+        },
+         handleScroll () {
+        // Your scroll handling here
+          console.log(window.scrollY)
+          var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+          var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+          var scrolled = (winScroll / height) * 100;
+          document.getElementById("myBar").style.width = scrolled + "%";
         }
     },
+     beforeMount () {
+      window.addEventListener('scroll', this.handleScroll);
+    },
+    beforeDestroy() {
+      window.removeEventListener('scroll', this.handleScroll);
+    }
 }
 </script>
 
 <style >
+.color-nav{ 
+    padding: 0% !important;
+    /* background: #15334d;
+    box-shadow: 0px 3px 5px 0px #0d2438;    */
+
+    box-shadow: 0px 4px 12px rgba(37,38,94,0.06); 
+    background: rgba(255, 255, 255);
+    
+
+}
+.bar-nav{
+    display: block;
+    width: 100%;
+    background: transparent;
+    border-bottom: 6px solid #d3dce6;
+    position: fixed;
+    /* margin-top: 5px; */
+    z-index: 1;
+}
+.progress-bar-nav{
+    position: absolute;
+    background: var(--gradient-color);
+    height: 10px;
+    width: 0%;
+    margin-bottom: -6px;
+    transition: width .3s ease-out;
+}
 .nav-item-logo-port{
     margin-left: 20px;
     font-family: 'Roboto',sans-serif;

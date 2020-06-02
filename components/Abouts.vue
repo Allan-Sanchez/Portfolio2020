@@ -1,5 +1,5 @@
 <template>
-    <section class="about-area">
+    <section id="section-about" class="about-area">
         <div class=" container-fluid">
             <div class="row">
                 <div class="col-lg-6 col-md-12">

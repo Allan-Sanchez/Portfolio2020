@@ -1,5 +1,5 @@
 <template>
-    <section class="site-banner">
+    <section id="section-banner" class="site-banner">
         <div class="container">
           <div class="row">
             <div class="col-lg-6 col-md-12 site-title">

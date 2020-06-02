@@ -19,7 +19,7 @@
     <!-- Menu Navagetion -->
     <NavBar @Changemode="modeChange()"></NavBar>
 
-    <main class="site-main dark">
+    <main class="site-main dark " id="section-home">
         <!-- Banner Hero -->
         <Banner></Banner>
 
@@ -30,7 +30,7 @@
         <Skill></Skill>
 
         <!-- contact -->
-        <!-- <Contact></Contact> -->
+        <Contact></Contact>
 
 
 
@@ -48,7 +48,9 @@ import NavBar from '~/components/Navbar.vue';
 import Banner from '~/components/Banner.vue';
 import Abouts from '~/components/Abouts.vue';
 import Skill from '~/components/Skill.vue';
-// import Contact from '~/components/Contact.vue';
+import Contact from '~/components/Contact.vue';
+
+
 
 export default {
   components: {
@@ -56,7 +58,7 @@ export default {
     Banner,
     Abouts,
     Skill,
-    // Contact
+    Contact
   },
   data() {
     return {
@@ -108,6 +110,7 @@ export default {
   }
   .site-main{
     /* padding: 0 5%; */
+    margin-top: 5%;
   }
   p.para{
   color: var(--text-color);
