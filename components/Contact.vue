@@ -6,7 +6,7 @@
 
                 <p class="para pl-3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit dolores nemo ab aperiam repellendus sequi nostrum architecto sunt incidunt consequuntur?</p>
             </div>
-            <form name="contact" action="POST" data-netlify="true">
+            <!-- <form name="contact" action="POST" data-netlify="true">
                 <div class="row">
                     <div class="col-md-6">
                         <h4 class="title-form">{{ $t('Contact.form1') }}</h4>
@@ -30,7 +30,7 @@
                         <button type="submit" class="btn button primary-button mr-md-0 mr-lg-4 text-uppercase  float-right">{{ $t('Contact.btn')}}</button>
                     </div>
                 </div>
-            </form>
+            </form> -->
             
         </div>
     </section>

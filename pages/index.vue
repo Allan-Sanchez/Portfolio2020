@@ -30,7 +30,7 @@
         <Skill></Skill>
 
         <!-- contact -->
-        <!-- <Contact></Contact> -->
+        <Contact></Contact>
 
 
 
@@ -48,7 +48,7 @@ import NavBar from '~/components/Navbar.vue';
 import Banner from '~/components/Banner.vue';
 import Abouts from '~/components/Abouts.vue';
 import Skill from '~/components/Skill.vue';
-// import Contact from '~/components/Contact.vue';
+import Contact from '~/components/Contact.vue';
 
 
 
@@ -58,7 +58,7 @@ export default {
     Banner,
     Abouts,
     Skill,
-    // Contact
+    Contact
   },
   data() {
     return {
