@@ -59,7 +59,8 @@ export default {
           },
         ],
         langDir: 'lang/',
-        defaultLocale: 'es',
+        // defaultLocale: 'es',
+        defaultLocale: 'en',
       },
     ]
   ],
