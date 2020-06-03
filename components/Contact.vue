@@ -28,8 +28,8 @@
                     <!-- <div class="col-sm-12 col-md-7 col-lg-8 mt-5">
                         <div data-netlify-recaptcha="true"></div>
                     </div> -->
-                    <div class="col-sm-12 col-md-5 col-lg-4 mt-5">
-                        <button type="submit" class="btn button primary-button mr-md-0 mr-lg-4 text-uppercase  float-right">{{ $t('Contact.btn')}}</button>
+                    <div class="col-sm-12  mt-5">
+                        <button type="submit" class="btn button primary-button mr-md-0  text-uppercase  float-right">{{ $t('Contact.btn')}}</button>
                     </div>
                 </div>
             </form>

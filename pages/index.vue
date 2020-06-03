@@ -13,6 +13,9 @@
         --box-shadow: {{ boxShadowColor }};
         --gradient-color: {{ gradienColor }};
         --roboto:{{ fontRoboto }}; 
+        --background-navbar:{{ backgroundNavbar }}; 
+        --shadow-navbar:{{ shadowNavbar }}; 
+        --border-navbar:{{ borderNavbar }}; 
         
       }
     </style>
@@ -73,7 +76,11 @@ export default {
       shadowColor: '0px 10px 30px rgba(118,85,225,03)',
       boxShadowColor: '0px 10px 30px rgba(57,56,61,0.205)',
       gradienColor: 'linear-gradient(90deg, #4458dc 0%,#854fee 100%)',
-      fontRoboto: "'Roboto',cursive"
+      fontRoboto: "'Roboto',cursive",
+      backgroundNavbar:'#fff',
+      shadowNavbar:'rgba(37,38,94,0.06)',
+      borderNavbar:'#d3dce6'
+
     }
   },
   methods: {
@@ -82,8 +89,14 @@ export default {
         this.backgroundColor = '#0d2438';
         this.titleColor = '#ccc';
         this.textColor= '#fff';
+        this.backgroundNavbar ="#15334d";
+        this.shadowNavbar="rgba(129, 130, 221, 0.06)";
+        this.borderNavbar="#1d4364";
         this.mode = 'dark';
       }else{
+        this.borderNavbar="#d3dce6";
+        this.backgroundNavbar ="#fff";
+        this.shadowNavbar="rgba(37,38,94,0.06)";
         this.backgroundColor='#f3f7f9',
         this.colorTest='#f00',
         this.primaryColor= '#4458dc',
