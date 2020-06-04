@@ -323,11 +323,11 @@
   transform: translateY(-10px);
 }
 .site-main .site-banner .site-title h1 {
-  font-size: 4rem;
+  font-size: 5rem;
 }
 
 .site-main .site-banner .site-title h4 {
-  font-size: 1.5rem;
+  font-size: 2rem;
 }
 
 .site-main .banner-image {
@@ -336,7 +336,8 @@
 }
 
 .title-text {
-  font: normal bold 50px/72px var(--roboto);
+  /* font: normal bold 50px/72px var(--roboto); */
+  font: normal bold 60px/72px var(--roboto);
   color: var(--text-color);
 }
 
@@ -386,10 +387,9 @@
 .button.primary-button:hover {
   color: #fff;
   font-weight: 600;
-  box-shadow:  0px 30px 30px rgba(57,56,61,0.205)
+  box-shadow: 0px 30px 30px rgba(57, 56, 61, 0.205);
   /* letter-spacing: 2px; */
   /* font: normal 600 18px/20px var(--roboto); */
-  
 }
 .site-main .site-banner .site-title h3 {
   padding-top: 25%;
@@ -439,14 +439,20 @@
 
 /* change mobile style */
 @media only screen and (max-width: 576px) {
-    .margin-banner-text {
-      margin: 0 5%;
-    }
-    .margin-banner-text h1{
-      font-size: 3rem !important;
-    }
-    .margin-banner-text h4{
-      font-size: 1.2rem !important;
-    }
+  .margin-banner-text {
+    margin: 0 5%;
   }
+  .margin-banner-text h1 {
+    font-size: 3rem !important;
+  }
+  .margin-banner-text h4 {
+    font-size: 1.2rem !important;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .site-main .site-banner .site-title h3::after {
+    width: 40vw;
+  }
+}
 </style>

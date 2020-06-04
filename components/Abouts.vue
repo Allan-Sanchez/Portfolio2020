@@ -67,6 +67,12 @@
     .about-area .about-title h2>span {
       letter-spacing: 7px;
     }
+    .about-area .about-title h2{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
     .contact {
         padding: 8rem 1rem !important;
     }
