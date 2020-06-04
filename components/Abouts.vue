@@ -31,7 +31,7 @@
                         <span>{{ $t('About.title2') }}</span>
                     </h2>
                     
-                    <div class="paragraph py-4">
+                    <div class="paragraph py-4 text-justify">
                         <p class="para">
                            {{$t('About.paragraph1')}} <strong>Allan Edrey Sanchez Rixtun</strong> {{$t('About.paragraph2')}} <strong> {{ $t('About.paragraph3') }}</strong> {{ $t('About.paragraph4') }}
                         </p>
@@ -63,4 +63,12 @@
         padding: 8rem 0rem;
         }
     }
+    @media only screen and (max-width: 576px) {
+    .about-area .about-title h2>span {
+      letter-spacing: 7px;
+    }
+    .contact {
+        padding: 8rem 1rem !important;
+    }
+  }
 </style>

@@ -2,7 +2,7 @@
   <section id="section-banner" class="site-banner">
     <div class="container">
       <div class="row">
-        <div class="col-lg-6 col-md-12 site-title">
+        <div class="col-lg-6 col-md-12 site-title margin-banner-text">
           <div class="ml-md-5 ml-lg-0">
             <h3 class="title-text">{{ $t("Banner.greeting") }}</h3>
             <h1 class="title-text text-uppercase">{{ $t("Banner.title") }}</h1>
@@ -346,11 +346,13 @@
   position: relative;
   border: 3px solid transparent;
   border-radius: 4px;
+  /* color: #fff !important; */
 }
 .primary-button {
   background: var(--gradient-color);
   background-clip: padding-box;
-  color: var(--text-color);
+  /* color: var(--text-color); */
+  color: #fff;
   transition: background 0.6s ease;
   box-shadow: var(--box-shadow);
 }
@@ -382,84 +384,17 @@
   box-shadow: var(--box-shadow);
 }
 .button.primary-button:hover {
-  color: whitesmoke;
+  color: #fff;
+  font-weight: 600;
+  box-shadow:  0px 30px 30px rgba(57,56,61,0.205)
+  /* letter-spacing: 2px; */
+  /* font: normal 600 18px/20px var(--roboto); */
+  
 }
 .site-main .site-banner .site-title h3 {
   padding-top: 25%;
   font-weight: 500;
 }
-
-.site-main .site-banner .site-title h3::after {
-  content: "";
-  height: 3px;
-  width: 22vw;
-  background: black;
-  display: inline-block;
-  margin-left: 5%;
-  transform: translateY(-10px);
-}
-.site-main .site-banner .site-title h1 {
-  font-size: 4rem;
-}
-
-.site-main .site-banner .site-title h4 {
-  font-size: 1.5rem;
-}
-
-.site-main .banner-image {
-  padding: 4rem 0;
-  width: 90rem;
-}
-
-.title-text {
-  font: normal bold 50px/72px var(--roboto);
-}
-
-.button {
-  padding: 0.8rem 2.2rem;
-  font: normal 500 16px/20px var(--roboto);
-  position: relative;
-  border: 3px solid transparent;
-  border-radius: 4px;
-}
-.primary-button {
-  background: var(--gradient-color);
-  background-clip: padding-box;
-  color: whitesmoke;
-  transition: background 0.6s ease;
-  box-shadow: var(--box-shadow);
-}
-.secundary-button {
-  background: whitesmoke;
-  background-clip: padding-box;
-  color: black;
-}
-.button.primary-button::after,
-.button.secundary-button::after {
-  position: absolute;
-  top: -2px;
-  left: -2px;
-  bottom: -2px;
-  right: -2px;
-  background: var(--gradient-color);
-  content: "";
-  z-index: -1;
-  border-radius: 4px;
-}
-.button.secundary-button {
-  background: white;
-  background-clip: padding-box;
-  transition: background 0.6s ease;
-}
-.button.secundary-button:hover {
-  background: var(--gradient-color);
-  color: whitesmoke;
-  box-shadow: var(--box-shadow);
-}
-.button.primary-button:hover {
-  color: whitesmoke;
-}
-
 /* scroll indicator */
 .box {
   position: absolute;
@@ -501,4 +436,17 @@
     display: none;
   }
 }
+
+/* change mobile style */
+@media only screen and (max-width: 576px) {
+    .margin-banner-text {
+      margin: 0 5%;
+    }
+    .margin-banner-text h1{
+      font-size: 3rem !important;
+    }
+    .margin-banner-text h4{
+      font-size: 1.2rem !important;
+    }
+  }
 </style>

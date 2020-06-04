@@ -323,6 +323,7 @@ export default {
   background: none;
   color: #fff;
 }
+
 @media only screen and (max-width: 992px) {
   .bar-nav {
     top: 7.5% !important;

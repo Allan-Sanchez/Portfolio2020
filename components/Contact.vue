@@ -2,7 +2,7 @@
     <section id="section-contact" class="formulario">
         <div class="container contact">
             <div class="row">
-                <h3 class="title-contact text-uppercase py-4">{{ $t('Contact.title') }}</h3>
+                <h3 class="title-contact text-uppercase py-4 pl-3">{{ $t('Contact.title') }}</h3>
 
                 <p class="para pl-3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit dolores nemo ab aperiam repellendus sequi nostrum architecto sunt incidunt consequuntur?</p>
             </div>
