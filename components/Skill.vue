@@ -8,10 +8,10 @@
             <h2 class=" text-uppercase">{{ $t("Skill.title") }}</h2>
 
             <ul class="top-work">
-              <li class="d-flex mb-4 mb-md-2">
+              <li v-for="(item, index) in repost" :key="index" class="d-flex mb-4 mb-md-2">
                 <div class="d-flex justify-content-center align-content-end">
                   <svg class="d-block" width="30px" viewBox="0 0 507.2 507.2">
-                    <title>Blog | Laravel</title>
+                    <title>{{item.name}}</title>
                     <g>
                       <circle
                         cx="253.6"
@@ -34,12 +34,12 @@
                     </g>
                   </svg>
                   <a class="mx-5 d-block skill-proyect" href="#">
-                    Blog | Laravel
+                    {{item.name}}
                   </a>
                 </div>
               </li>
 
-              <li class="d-flex  mb-4 mb-md-2">
+              <!-- <li class="d-flex  mb-4 mb-md-2">
                 <div class="d-flex justify-content-center align-items-center">
                   <svg class="d-block" width="30px" viewBox="0 0 507.2 507.2">
                     <title>Blog | Laravel</title>
@@ -161,7 +161,7 @@
                     Assisten class| Firebase Vue.js
                   </a>
                 </div>
-              </li>
+              </li> -->
             </ul>
           </div>
         </div>
@@ -503,3 +503,43 @@
   }
 }
 </style>
+
+<script>
+import axios from 'axios';
+export default {
+  name:'skillPage',
+  data() {
+    return {
+      repost :[]
+    }
+  },
+  mounted() {
+    this.getData();
+    console.log('here i have to call github user repos')
+  },
+  methods: {
+    async getData(){
+      let dataRepost = [];
+      let dataOrder= [];
+      let res = await axios.get('https://api.github.com/users/Allan-Sanchez/repos');
+       res.data.forEach(item => {
+         let temp ={
+           url:item.url,
+           name:item.name,
+           description:item.description,
+           language:item.language,
+           updated_at:item.updated_at
+         };
+         dataRepost.push(temp);
+       });
+
+      dataOrder  = await dataRepost.sort((a, b) => new Date(b.updated_at) - new Date(a.updated_at) );
+      
+      for (let i = 0; i < 6; i++) {
+        this.repost.push(dataOrder[i]);
+      }
+      // console.log(res.data)
+    }
+  },
+}
+</script>
