@@ -38,7 +38,7 @@
                     </g>
                   </svg>
                   <a
-                    class="mx-5 d-block skill-proyect"
+                    class="mx-5 d-block skill-proyect text-uppercase"
                     :href="item.url"
                     target="_blank"
                   >
@@ -537,8 +537,10 @@ export default {
       let dataRepost = [];
       let dataOrder = [];
       let res = await axios.get(
-        "https://api.github.com/users/Allan-Sanchez/repos"
+        "https://api.github.com/users/Allan-Sanchez/repos?per_page=100"
+        // "https://api.github.com/users/Allan-Sanchez/repos"
       );
+
       res.data.forEach((item) => {
         let temp = {
           url: item.html_url,
