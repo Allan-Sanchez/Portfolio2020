@@ -47,7 +47,7 @@
 </template>
 
 <script>
-import NavBar from '~/components/Navbar.vue';
+import NavBar from '~/components/Navbar2.vue';
 import Banner from '~/components/Banner.vue';
 import Abouts from '~/components/Abouts.vue';
 import Skill from '~/components/Skill.vue';
