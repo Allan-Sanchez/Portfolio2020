@@ -121,10 +121,7 @@ export default {
     
     background: var(--backgroundColor);
   }
-  .site-main{
-    /* padding: 0 5%; */
-    margin-top: 5%;
-  }
+
   p.para{
   color: var(--text-color);
   font: normal 500 16px/25px var(--roboto);    

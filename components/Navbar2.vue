@@ -5,7 +5,7 @@
         class="navbar navbar-light color-nav p-lg-0 fixed-nav"
         toggleable="lg"
       >
-        <b-navbar-brand class="nav-item-logo-port" href="#">
+        <b-navbar-brand class="nav-item-logo-port" to="/">
           Allan Sanchez
         </b-navbar-brand>
         <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
@@ -151,7 +151,7 @@ export default {
 .main-menu{
 position: relative;
 width: 100%;
-height: 150px;
+height: 90px;
 z-index: 1;
 }
 .fixed-nav{
